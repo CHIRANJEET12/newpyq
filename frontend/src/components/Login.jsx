@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import GoogleLogin from "./GoogleLogin";
+
 
 export function Login() {
   const [email, setEmail] = useState("");
@@ -65,6 +67,7 @@ export function Login() {
             {loading ? "Logging in..." : "Login"}
           </button>
         </div>
+        <GoogleLogin></GoogleLogin>
       </form>
     </div>
   );
